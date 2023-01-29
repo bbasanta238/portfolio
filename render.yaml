@@ -1,7 +1,7 @@
 databases:
   - name: portfolio
-    databaseName: ${ DATABASE }
-    user: DATABASE_USER
+    databaseName: 
+    user: 
 
 services:
   - type: web
