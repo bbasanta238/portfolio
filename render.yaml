@@ -1,7 +1,7 @@
 databases:
   - name: portfolio
     databaseName: postgres
-    user: 
+    ipAllowList: []
 
 services:
   - type: web
@@ -12,10 +12,11 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: postgres
+          name: portfolio
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
   - type: redis
     name: redis
+    ipAllowList: []
     plan: free
