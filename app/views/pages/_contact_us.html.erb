@@ -29,14 +29,14 @@
       </div>
     </div>
     <div style="max-width: 700px;" class="mx-3 mx-lg-0">
-      <form action="" class="d-flex flex-wrap gap-3">
-        <input class="form-control px-4 py-3 rounded-3" type="text" name="" id="" placeholder="Your Name" style="max-width: 300px;">
-        <input class="form-control   px-4 py-3 rounded-3" type="email" name="" id="" placeholder="Your Email" style="max-width: 300px;">
-        <input class="form-control   px-4 py-3 rounded-3" type="number" name="" id="" placeholder="Your Phone" style="max-width: 300px;">
-        <input class="form-control   px-4 py-3 rounded-3" type="text" name="" id="" placeholder="Your Subject" style="max-width: 300px;">
-        <textarea class="form-control  px-4 py-3 rounded-3" type="text" name="" id="" placeholder="" style="max-width: 618px; height: 200px;">
-                    </textarea>
-        <button class="btn btn-red-gray py-3 px-6 rounded-5 text-white fw-semibold" type="submit">Submit Now</button>
+      <form action="<%= messages_path %>" class="d-flex flex-wrap gap-3" method="POST" for="message">
+        <input class="form-control px-4 py-3 rounded-3" type="text" name="name" id="" placeholder="Your Name" style="max-width: 300px;">
+        <input class="form-control   px-4 py-3 rounded-3" type="email" name="email" id="" placeholder="Your Email" style="max-width: 300px;" required="required">
+        <input class="form-control   px-4 py-3 rounded-3" type="number" name="phone" id="" placeholder="Your Phone" style="max-width: 300px;">
+        <input class="form-control   px-4 py-3 rounded-3" type="text" name="subject" id="" placeholder="Your Subject" style="max-width: 300px;" required="required">
+        <textarea class="form-control  px-4 py-3 rounded-3" type="text" name="text" id="" placeholder="" style="max-width: 618px; height: 200px;" required="required">
+        </textarea>
+        <button class="btn btn-red-gray py-3 px-6 rounded-5 text-white fw-semibold">Submit Now</button>
       </form>
     </div>
   </div>
