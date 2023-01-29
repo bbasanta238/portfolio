@@ -1,6 +1,6 @@
 databases:
   - name: portfolio
-    databaseName: postgres
+    databaseName: portfolio
     ipAllowList: []
 
 services:
