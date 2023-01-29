@@ -1,6 +1,6 @@
 databases:
   - name: portfolio
-    databaseName: ENV['DATABASE']
+    databaseName: ${ DATABASE }
     user: DATABASE_USER
 
 services:
