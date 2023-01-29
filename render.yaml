@@ -1,6 +1,6 @@
 databases:
   - name: portfolio
-    databaseName: DATABASE
+    databaseName: ENV['DATABASE']
     user: DATABASE_USER
 
 services:
