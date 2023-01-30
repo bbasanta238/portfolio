@@ -8,8 +8,8 @@ ActionMailer::Base.smtp_settings = {
   :address => "smtp.gmail.com",
   :port => "587",
   :authentication => :plain,
-  :user_name => ENV["SENDER_MAIL"],
-  :password => ENV["SENDER_PASSWORD"],
+  :user_name => ENV["MAIL_SENDER"],
+  :password => ENV["MAIL_SENDER_PASSWORD"],
   :domain => "render.com",
   :enable_starttls_auto => true,
 }
