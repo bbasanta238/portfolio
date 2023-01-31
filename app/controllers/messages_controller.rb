@@ -4,6 +4,8 @@ class MessagesController < ApplicationController
     if @message.save
       MailToAdminMailer.create_message(message: @message).deliver_now
       redirect_to root_path
+    else
+      redirect_to root_path
     end
   end
 
