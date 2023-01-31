@@ -27301,4 +27301,24 @@ p {
   background-size: 80px;
   width: 80px;
   height: 80px;
+}
+
+.card-width {
+  max-width: 670px;
+}
+
+@media (min-width: 768px) {
+  .card-width {
+    max-width: 670px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1884px) {
+  .card-width {
+    max-width: 780px;
+  }
+}
+@media (max-width: 1884px) {
+  .card-width {
+    max-width: 900px;
+  }
 }/*# sourceMappingURL=custom.css.map */
