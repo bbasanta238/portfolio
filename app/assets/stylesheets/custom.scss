@@ -684,6 +684,10 @@ p {
 }
 
 
+.navbar-name{
+	font-family: 'Cookie', cursive;
+}
+
 .fw-500 {
 	font-weight: 500;
 }
@@ -971,6 +975,25 @@ p {
   background-position: center;
 }
 
+.card-width{
+	max-width: 670px;
+}
+
+@media (min-width: 768px){
+	.card-width{
+		max-width: 670px;
+	}
+}
+@media (min-width:768px) and (max-width:1884px){
+	.card-width{
+		max-width: 780px;
+	}
+}
+@media (max-width:1884px) {
+	.card-width{
+		max-width: 900px;
+	}
+}
 
 .wrapper .outer-circle{
   animation: showspin-outer 6s linear 0s infinite;
