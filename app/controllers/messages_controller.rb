@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
     {
       name: params[:name],
       email: params[:email],
-      phone_number: params[:phone],
+      phone_number: params[:phone_number],
       subject: params[:subject],
       text: params[:text],
     }
