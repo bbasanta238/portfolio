@@ -5,4 +5,4 @@ set -o errexit
 bundle install
 bundle exec rake assets:precompile
 bundle exec rails assets:clean
-bundle exec rails db:drop db:create db:migrate
+bundle exec rails db:create db:migrate
