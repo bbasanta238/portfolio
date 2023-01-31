@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "pages#index"
   resources :messages
+  get "*path", to: redirect("/")
 end
