@@ -27180,9 +27180,10 @@ p {
 }
 
 .inner-circle:nth-child(6) {
-  background-image: url(spinner/react.png);
+  background-image: url(spinner/ruby.png);
   background-size: cover;
   background-position: center;
+  border: 1px solid blue;
 }
 
 .inner-circle:nth-child(7) {
